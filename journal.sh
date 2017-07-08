@@ -3,6 +3,13 @@ write_journal()
   # read date from user input
   echo "insert date mm-dd (2017 is in by default): "
   read mydate
+
+  # exit if user insert :q
+  if [ "$mydate" = ":q" ] ; then
+    return
+  fi
+
+  # add year to date
   mydate="2017-$mydate"
 
   # create file if not exist
