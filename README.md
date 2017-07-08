@@ -1,4 +1,4 @@
-# journal-script
+# add-journal-entry
 
 Launch interactive terminal to ask user for date and content, and create a text file with jekyll's post markdown format.
 
